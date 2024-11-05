@@ -1,0 +1,11 @@
+{
+  "nomenclatures": [
+    {
+      "type": "TYPE_SITE",
+      "cd_nomenclature": "RELEVE_PEDOLOGIE",
+      "mnemonique": "Relevé pédologique",
+      "label_default": "Relevé pédologique",
+      "definition_default": "Emplacement pour relevé pédologique"
+    }
+  ]
+}

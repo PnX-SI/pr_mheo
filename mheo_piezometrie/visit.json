@@ -1,0 +1,139 @@
+{
+  "genre": "F",
+  "label": "Mesure",
+  "label_list": "Mesures",
+  "display_properties": [
+    "visit_date_min",
+    "heure_mesure",
+    "valeur_mesure",
+    "id_dataset",
+    "code_continuité",
+    "mode_obtention",
+    "qualification_acquisition",
+    "statut_mesure",
+    "nature_mesure",
+    "observers",
+    "gestionnaire",
+    "valideur"
+  ],
+  "display_list": [
+    "visit_date_min",
+    "valeur_mesure",
+    "observers"
+  ],
+  "specific": {
+    "visit_date_min": {
+      "attribut_label": "Date de la mesure",
+      "type_widget": "date",
+      "required": true,
+      "code_sandre": "DateMesure"
+    },
+    "heure_mesure": {
+      "attribut_label": "Heure de la mesure",
+      "type_widget": "time",
+      "required": true,
+      "code_sandre": "HeureMesure"
+    },
+    "valeur_mesure": {
+      "attribut_label": "Profondeur de la mesure",
+      "type_widget": "number",
+      "required": true,
+      "code_sandre": "ValeurMesure",
+      "commentaire": "Cette valeur peut être négative si la zone est inondée."
+    },
+    "code_continuité": {
+      "attribut_label": "Code de continuité de la mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "CODE_CONTINUITE_POINT",
+      "required": true,
+      "code_sandre": "CdContinuiteMesure"
+    },
+    "mode_obtention": {
+      "attribut_label": "Mode d'obtention de la mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "MODE_OBTENTION_MESURE",
+      "value": {
+        "code_nomenclature_type": "MODE_OBTENTION_MESURE",
+        "cd_nomenclature": "1"
+      },
+      "required": true,
+      "code_sandre": "ModeObtentionMesure"
+    },
+    "qualification_acquisition": {
+      "attribut_label": "Qualification de l'acquisition de la mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "QUALITIFICATION_RESULTAT",
+      "value": {
+        "code_nomenclature_type": "QUALITIFICATION_RESULTAT",
+        "cd_nomenclature": "1"
+      },
+      "required": true,
+      "code_sandre": "ConformiteAcqMesure"
+    },
+    "statut_mesure": {
+      "attribut_label": "Statut de la mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "STATUT_DONNEES_PIEZO",
+      "value": {
+        "code_nomenclature_type": "STATUT_DONNEES_PIEZO",
+        "cd_nomenclature": "1"
+      },
+      "required": true,
+      "code_sandre": "StatutAcqMesure"
+    },
+    "nature_mesure": {
+      "attribut_label": "Nature de la mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "NATURE_MESURE",
+      "value": {
+        "code_nomenclature_type": "NATURE_MESURE",
+        "cd_nomenclature": "N"
+      },
+      "required": true,
+      "code_sandre": "NatureMesure"
+    },
+    "observers": {
+      "attribut_label": "Producteurs",
+      "multiple": true,
+      "required": true,
+      "code_sandre": "CdIntervenant"
+    },
+    "gestionnaire": {
+      "attribut_label": "Gestionnaire",
+      "type_widget": "datalist",
+      "api": "users/menu/__MODULE.ID_LIST_OBSERVER",
+      "application": "GeoNature",
+      "keyValue": "id_role",
+      "keyLabel": "nom_complet",
+      "type_util": "user",
+      "multiple": false,
+      "required": true,
+      "designStyle": "bootstrap",
+      "code_sandre": "CdIntervenant2"
+    },
+    "valideur": {
+      "attribut_label": "Valideur",
+      "type_widget": "datalist",
+      "api": "users/menu/__MODULE.ID_LIST_OBSERVER",
+      "application": "GeoNature",
+      "keyValue": "id_role",
+      "keyLabel": "nom_complet",
+      "type_util": "user",
+      "multiple": false,
+      "required": false,
+      "designStyle": "bootstrap",
+      "code_sandre": "CdIntervenant3"
+    },
+    "comments": {
+      "hidden": true
+    },
+    "nb_observations": {
+      "hidden": true
+    }
+  }
+}

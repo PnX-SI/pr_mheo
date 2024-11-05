@@ -1,0 +1,117 @@
+{
+  "description_field_name": "cd_nom",
+  "display_properties": [
+    "cd_nom",
+    "récolte",
+    "strate_végétale",
+    "abondance_taxinomique"
+  ],
+  "display_list": [
+    "cd_nom",
+    "récolte",
+    "strate_végétale",
+    "abondance_taxinomique"
+  ],
+  "specific": {
+    "cd_nom": {
+      "attribut_label": "Taxon",
+      "code_sandre": "ValOMH"
+    },
+    "récolte": {
+      "attribut_label": "Récolte",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Oui",
+          "value": "1"
+        },
+        {
+          "label": "Non",
+          "value": "2"
+        }
+      ],
+      "code_sandre": "Par8910"
+    },
+    "strate_végétale": {
+      "attribut_label": "Strate végétale",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Strate arborescente",
+          "value": "A"
+        },
+        {
+          "label": "Strate arbustive supérieure",
+          "value": "a1"
+        },
+        {
+          "label": "Strate arbustive basse",
+          "value": "a2"
+        },
+        {
+          "label": "Strate herbacée",
+          "value": "h"
+        },
+        {
+          "label": "Strate bryolichénique",
+          "value": "m"
+        }
+      ],
+      "code_sandre": "Par8911"
+    },
+    "abondance_taxinomique": {
+      "attribut_label": "Abondance taxinomique",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "R (Rare)",
+          "value": "1"
+        },
+        {
+          "label": "P (Présent)",
+          "value": "2"
+        },
+        {
+          "label": "C (Commun)",
+          "value": "3"
+        },
+        {
+          "label": "AA (Très abondant)",
+          "value": "4"
+        },
+        {
+          "label": "A (Abondant)",
+          "value": "5"
+        },
+        {
+          "label": "5 (Très très abondant)",
+          "value": "6"
+        },
+        {
+          "label": "4 (Très abondant)",
+          "value": "7"
+        },
+        {
+          "label": "3 (Abondant)",
+          "value": "8"
+        },
+        {
+          "label": "2 (Assez peu abondant)",
+          "value": "9"
+        },
+        {
+          "label": "1 (Peu abondant)",
+          "value": "10"
+        },
+        {
+          "label": "0 (Absent ou très peu abondant)",
+          "value": "11"
+        }
+      ],
+      "code_sandre": "Par7317"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

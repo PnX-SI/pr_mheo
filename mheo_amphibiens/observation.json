@@ -1,0 +1,54 @@
+{
+  "display_properties": [
+    "cd_nom",
+    "nb_individus_adultes",
+    "nb_larves",
+    "nb_pontes",
+    "nb_mâles",
+    "méthodes_observation"
+  ],
+  "display_list": [
+    "cd_nom",
+    "nb_individus_adultes",
+    "méthodes_observation"
+  ],
+  "specific": {
+    "nb_individus_adultes": {
+      "attribut_label": "Nombre d'individus vivants adultes",
+      "type_widget": "number",
+      "code_sandre": "Par7790"
+    },
+    "nb_larves": {
+      "attribut_label": "Nombre de larves de stade non précisé",
+      "type_widget": "number",
+      "code_sandre": "Par3139"
+    },
+    "nb_pontes": {
+      "attribut_label": "Nombre de pontes",
+      "type_widget": "number",
+      "code_sandre": "Par8914"
+    },
+    "nb_mâles": {
+      "attribut_label": "Nombre de mâles",
+      "type_widget": "number",
+      "code_sandre": "Par8915"
+    },
+    "méthodes_observation": {
+      "attribut_label": "Méthodes d'observation",
+      "type_widget": "select",
+      "multiple": true,
+      "values": [
+        "Pêche",
+        "Détection visuelle",
+        "Détection chant"
+      ]
+    },
+    "cd_nom": {
+      "attribut_label": "Taxon",
+      "code_sandre": "CdAppelTaxon"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

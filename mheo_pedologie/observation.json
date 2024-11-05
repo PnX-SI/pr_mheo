@@ -1,0 +1,281 @@
+{
+  "genre": "M",
+  "label": "Horizon",
+  "label_list": "Horizons",
+  "description_field_name": "numéro_horizon",
+  "display_properties": [
+    "numéro_horizon",
+    "profondeur_limite_inférieure",
+    "profondeur_limite_supérieure",
+    "régularité_limites",
+    "texture",
+    "structure",
+    "éléments_grossiers",
+    "présence_racines",
+    "nature_taches",
+    "abondance_taches",
+    "taille_taches",
+    "forme_taches",
+    "humidité",
+    "compacité",
+    "plasticité",
+    "adhésivité",
+    "friabilité",
+    "altération_mat_organique",
+    "indice_von_post"
+  ],
+  "display_list": [
+    "numéro_horizon",
+    "profondeur_limite_inférieure",
+    "profondeur_limite_supérieure"
+  ],
+  "specific": {
+    "numéro_horizon": {
+      "attribut_label": "Numéro de l'horizon",
+      "type_widget": "number",
+      "required": true,
+      "code_sandre": "Par8480"
+    },
+    "profondeur_limite_inférieure": {
+      "attribut_label": "Profondeur de l'horizon (limite inférieure)",
+      "type_widget": "number",
+      "min": 0,
+      "required": true,
+      "code_sandre": "Par7164"
+    },
+    "profondeur_limite_supérieure": {
+      "attribut_label": "Profondeur de l'horizon (limite supérieure)",
+      "type_widget": "number",
+      "min": 0,
+      "code_sandre": "Par7173"
+    },
+    "régularité_limites": {
+      "attribut_label": "Régularité des limites de l'horizon",
+      "required": true,
+      "code_sandre": "Par8481",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Régulière",
+          "value": "1"
+        },
+        {
+          "label": "Ondulée",
+          "value": "2"
+        },
+        {
+          "label": "Irrégulière",
+          "value": "3"
+        },
+        {
+          "label": "Interrompue",
+          "value": "4"
+        }
+      ]
+    },
+    "texture": {
+      "attribut_label": "Texture de l'horizon",
+      "required": true,
+      "code_sandre": "Par8483",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Organique",
+          "value": "1"
+        },
+        {
+          "label": "Sableuse",
+          "value": "2"
+        },
+        {
+          "label": "Limoneuse",
+          "value": "3"
+        },
+        {
+          "label": "Argileuse",
+          "value": "4"
+        }
+      ]
+    },
+    "structure": {
+      "attribut_label": "Structure de l'horizon",
+      "required": true,
+      "code_sandre": "Par8484",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Particulaire",
+          "value": "1"
+        },
+        {
+          "label": "Grumeleuse",
+          "value": "2"
+        },
+        {
+          "label": "Grenue",
+          "value": "3"
+        },
+        {
+          "label": "Massive",
+          "value": "4"
+        },
+        {
+          "label": "Lammellaire",
+          "value": "5"
+        },
+        {
+          "label": "Prismatique",
+          "value": "6"
+        },
+        {
+          "label": "En colonnes",
+          "value": "7"
+        },
+        {
+          "label": "Polydrique",
+          "value": "8"
+        },
+        {
+          "label": "Blocs cubiques",
+          "value": "9"
+        },
+        {
+          "label": "En fuseaux",
+          "value": "10"
+        },
+        {
+          "label": "Fibreuse",
+          "value": "11"
+        },
+        {
+          "label": "Feuillettée",
+          "value": "12"
+        },
+        {
+          "label": "Lithologique",
+          "value": "13"
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ]
+    },
+    "éléments_grossiers": {
+      "attribut_label": "Éléments grossiers de l'horizon",
+      "code_sandre": "Par8485",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Inconnu",
+          "value": "0"
+        },
+        {
+          "label": "Sans",
+          "value": "1"
+        },
+        {
+          "label": "Graviers inférieur à 2 cm",
+          "value": "2"
+        },
+        {
+          "label": "Cailloux 2 à 6 cm",
+          "value": "3"
+        },
+        {
+          "label": "Pierres et blocs supérieur à 6 cm",
+          "value": "4"
+        }
+      ]
+    },
+    "présence_racines": {
+      "attribut_label": "Présence de racines de l'horizon",
+      "required": true,
+      "code_sandre": "Par8486",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Sans",
+          "value": "1"
+        },
+        {
+          "label": "Inférieure à 8/dm²",
+          "value": "2"
+        },
+        {
+          "label": "8 à 32/dm²",
+          "value": "3"
+        },
+        {
+          "label": "Supérieur à 32/dm²",
+          "value": "4"
+        }
+      ]
+    },
+    "nature_taches": {
+      "attribut_label": "Nature de taches de l'horizon",
+      "required": true,
+      "code_sandre": "Par8487",
+      "type_widget": "text"
+    },
+    "abondance_taches": {
+      "attribut_label": "Abondance de taches de l'horizon",
+      "code_sandre": "Par8488",
+      "type_widget": "text"
+    },
+    "taille_taches": {
+      "attribut_label": "Taille des taches principales de l'horizon",
+      "code_sandre": "Par8489",
+      "type_widget": "text"
+    },
+    "forme_taches": {
+      "attribut_label": "Forme des taches principales sur l'horizon",
+      "code_sandre": "Par8490",
+      "type_widget": "text"
+    },
+    "humidité": {
+      "attribut_label": "Humidité du sol de l'horizon",
+      "required": true,
+      "code_sandre": "Par8491",
+      "type_widget": "text"
+    },
+    "compacité": {
+      "attribut_label": "Compacité du sol de l'horizon",
+      "code_sandre": "Par8492",
+      "type_widget": "text"
+    },
+    "plasticité": {
+      "attribut_label": "Plasticité du sol de l'horizon",
+      "required": true,
+      "code_sandre": "Par8493",
+      "type_widget": "text"
+    },
+    "adhésivité": {
+      "attribut_label": "Adhésivité du sol de l'horizon",
+      "code_sandre": "Par8494",
+      "type_widget": "text"
+    },
+    "friabilité": {
+      "attribut_label": "Friabilité de l'horizon",
+      "required": true,
+      "code_sandre": "Par8495",
+      "type_widget": "text"
+    },
+    "altération_mat_organique": {
+      "attribut_label": "Altération de la MO de l'horizon",
+      "code_sandre": "Par8496",
+      "type_widget": "text"
+    },
+    "indice_von_post": {
+      "attribut_label": "Indice Von Post de l'horizon",
+      "code_sandre": "Par8497",
+      "type_widget": "text"
+    },
+    "cd_nom": {
+      "attribut_label": "Espèce - saisir n'importe quelle valeur (dév. prévu pour retirer ce champ, voir https://github.com/PnX-SI/gn_module_monitoring/issues/400)"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

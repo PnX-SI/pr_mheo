@@ -1,0 +1,75 @@
+{
+  "genre": "M",
+  "label": "Point",
+  "label_list": "Points",
+  "geometry_type": "Point",
+  "display_properties": [
+    "base_site_name",
+    "id_inventor",
+    "first_use_date",
+    "last_visit",
+    "nb_visits",
+    "types_site",
+    "code_milieu_humide",
+    "identifiant_station_sinp",
+    "origine_données_station_sinp",
+    "nature_géographique_station_sinp",
+    "précision_localisation_station_sinp"
+  ],
+  "display_list": [
+    "base_site_name",
+    "last_visit",
+    "id_inventor",
+    "nb_visits",
+    "types_site"
+  ],
+  "specific": {
+    "code_milieu_humide": {
+      "attribut_label": "Code du milieu humide effectif",
+      "type_widget": "text",
+      "code_sandre": "CdMhi"
+    },
+    "identifiant_station_sinp": {
+      "attribut_label": "Identifiant SINP",
+      "type_widget": "text",
+      "code_sandre": "IdStNP"
+    },
+    "origine_données_station_sinp": {
+      "attribut_label": "Origine de la donnée",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "STATUT_SOURCE",
+      "code_sandre": "OrigineStNP"
+    },
+    "nature_géographique_station_sinp": {
+      "attribut_label": "Nature géographique",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "NAT_OBJ_GEO",
+      "code_sandre": "NatGeoStNP"
+    },
+    "précision_localisation_station_sinp": {
+      "attribut_label": "Précision de la localisation",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "PRECISION_GEO",
+      "code_sandre": "PreStSINP"
+    },
+    "base_site_name": {
+      "attribut_label": "Nom",
+      "type_widget": "text",
+      "code_sandre": "NomStNP"
+    },
+    "base_site_code": {
+      "required": false,
+      "hidden": true
+    },
+    "base_site_description": {
+      "hidden": true
+    },
+    "id_sites_group": {
+      "required": false,
+      "hidden": true
+    }
+  }
+}
