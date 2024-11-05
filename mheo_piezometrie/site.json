@@ -1,0 +1,96 @@
+{
+  "genre": "M",
+  "label": "Point",
+  "label_list": "Points",
+  "description_field_name": "base_site_name",
+  "geometry_type": "Point",
+  "display_properties": [
+    "base_site_name",
+    "types_site",
+    "nb_visits",
+    "code_milieu_humide",
+    "first_use_date",
+    "heure_début_repère",
+    "méthode_dépouillement",
+    "altitude_point_eau",
+    "système_altimétrique",
+    "précision_altitude",
+    "hauteur_repère"
+  ],
+  "display_list": [
+    "base_site_name",
+    "last_visit",
+    "nb_visits"
+  ],
+  "specific": {
+    "base_site_name": {
+      "type_widget": "text",
+      "attribut_label": "Code national du point d'eau (BRGM)",
+      "definition": "Rechercher le code sur la cartographie en ligne. Cocher la couche 'Liste des points d'eau BSSEAU' (à droite dans la liste des données). Le code est affiché à droite en cliquant sur un point (après avoir cliqué sur l'outil 'Informations')\nhttps://ades.eaufrance.fr/GeoSIE",
+      "required": true,
+      "code_sandre": "CdNationalPTE"
+    },
+    "code_milieu_humide": {
+      "attribut_label": "Code du milieu humide effectif",
+      "type_widget": "text",
+      "required": true,
+      "code_sandre": "CdMhi"
+    },
+    "first_use_date": {
+      "attribut_label": "Date d'application du repère",
+      "type_widget": "date",
+      "required": true,
+      "code_sandre": "DateDebutRep"
+    },
+    "heure_début_repère": {
+      "attribut_label": "Heure d'application du repère (format HH:MM:SS)",
+      "type_widget": "time",
+      "required": true,
+      "code_sandre": "HeureDebutRep"
+    },
+    "méthode_dépouillement": {
+      "attribut_label": "Méthode de dépouillement",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "METH_DEPOUILLEMENT",
+      "code_sandre": "MethodeDepouillement"
+    },
+    "altitude_point_eau": {
+      "attribut_label": "Altitude NGF sol de l'ouvrage",
+      "type_widget": "number",
+      "required": true,
+      "code_sandre": "AltitudePTE"
+    },
+    "système_altimétrique": {
+      "attribut_label": "Système altimétrique de l'altitude sol",
+      "definition": "Par défaut = Code du nivellement Général de la France 1884 (Code EDIGEO : NGF84)\nPlus de détails : https://id.eaufrance.fr/nsa/76",
+      "type_widget": "text",
+      "code_sandre": "SystemeAltiPTE"
+    },
+    "précision_altitude": {
+      "attribut_label": "Précision de l'altitude sol",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "PRECISION_ALTI",
+      "code_sandre": "PrecisionAltiPTE"
+    },
+    "hauteur_repère": {
+      "attribut_label": "Hauteur du repère par rapport au sol",
+      "type_widget": "number",
+      "min": 0,
+      "required": true,
+      "code_sandre": "HauteurReperePTE"
+    },
+    "base_site_code": {
+      "required": false,
+      "hidden": true
+    },
+    "base_site_description": {
+      "hidden": true
+    },
+    "id_sites_group": {
+      "required": false,
+      "hidden": true
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "display_properties": [
+    "id_mesure",
+    "visit_date_min",
+    "heure_début",
+    "visit_date_max",
+    "heure_fin",
+    "observers",
+    "dataset",
+    "nb_observations",
+    "propriété_mesure",
+    "diffusion_mesure",
+    "durée_secondes",
+    "physionomie_formations_végétales",
+    "section_html_strate_arborescente",
+    "hauteur_strate_arborescente",
+    "recouvrement_strate_arborescente",
+    "section_html_strate_arbustive_supérieure",
+    "hauteur_strate_arbustive_supérieure",
+    "recouvrement_strate_arbustive_supérieure",
+    "section_html_strate_arbustive_basse",
+    "hauteur_strate_arbustive_basse",
+    "recouvrement_strate_arbustive_basse",
+    "section_html_strate_herbacée",
+    "hauteur_strate_herbacée",
+    "recouvrement_strate_herbacée",
+    "section_html_strate_bryolichénique",
+    "hauteur_strate_bryolichénique",
+    "recouvrement_strate_bryolichénique"
+  ],
+  "display_list": [
+    "id_mesure",
+    "visit_date_min",
+    "observers",
+    "dataset",
+    "nb_observations"
+  ],
+  "specific": {
+    "id_mesure": {
+      "attribut_label": "identifiant unique de la mesure (max 25 caractères)",
+      "type_widget": "text",
+      "required": true,
+      "code_sandre": "IdOMH"
+    },
+    "id_mesure_fils": {
+      "attribut_label": "identifiant fils pour emboîtement (max 25 caractères)",
+      "type_widget": "text",
+      "code_sandre": "IdOMHFils"
+    },
+    "visit_date_min": {
+      "attribut_label": "Date de début",
+      "type_widget": "date",
+      "code_sandre": "DatDebOMH"
+    },
+    "visit_date_max": {
+      "attribut_label": "Date de fin",
+      "type_widget": "date",
+      "code_sandre": "DatFinOMH"
+    },
+    "heure_début": {
+      "attribut_label": "Heure début mesure",
+      "type_widget": "time",
+      "code_sandre": "HeurDebOMH"
+    },
+    "heure_fin": {
+      "attribut_label": "Heure fin mesure",
+      "type_widget": "time",
+      "code_sandre": "HeurFinOMH"
+    },
+    "propriété_mesure": {
+      "attribut_label": "Propriété mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "DS_PUBLIQUE",
+      "code_sandre": "ProOMH"
+    },
+    "diffusion_mesure": {
+      "attribut_label": "Diffusion mesure",
+      "type_widget": "select",
+      "values": [
+        "Oui",
+        "Non"
+      ],
+      "code_sandre": "DiffOMH"
+    },
+    "durée_secondes": {
+      "attribut_label": "Durée en seconde",
+      "type_widget": "number",
+      "min": 0,
+      "code_sandre": "Par7789"
+    },
+    "physionomie_formations_végétales": {
+      "attribut_label": "Physionomie des formations végétales",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "AL - Alluvions",
+          "value": "1"
+        },
+        {
+          "label": "AQ - Végétation aquatique",
+          "value": "2"
+        },
+        {
+          "label": "EC - Bordure d'eaux courantes",
+          "value": "3"
+        },
+        {
+          "label": "EX - Grèves exondées",
+          "value": "4"
+        },
+        {
+          "label": "FO - Végétation fontinale",
+          "value": "5"
+        },
+        {
+          "label": "RB - Petits Hélophytes",
+          "value": "6"
+        },
+        {
+          "label": "BM - Bas-marais et marais de transition",
+          "value": "7"
+        },
+        {
+          "label": "HM - Haut-marais",
+          "value": "8"
+        },
+        {
+          "label": "GH - Grands Hélophytes",
+          "value": "9"
+        },
+        {
+          "label": "MC - Magnocariçaie",
+          "value": "10"
+        },
+        {
+          "label": "PH - Prairie humide",
+          "value": "11"
+        },
+        {
+          "label": "MG - Mégaphorbiaie",
+          "value": "12"
+        },
+        {
+          "label": "CN - Combe à neige",
+          "value": "13"
+        },
+        {
+          "label": "LA - Lande et landine",
+          "value": "14"
+        },
+        {
+          "label": "FU -Fourré humide",
+          "value": "15"
+        },
+        {
+          "label": "BFH -Boisement Feuillu Humide",
+          "value": "16"
+        },
+        {
+          "label": "BCH - Boisement et conifère",
+          "value": "17"
+        }
+      ],
+      "code_sandre": "Par8908"
+    },
+    "section_html_strate_arborescente": {
+      "type_widget": "html",
+      "html": "<strong>Strate arborescente</strong><br>Constituée des arbres de première et seconde grandeurs. Hauteur sup. à 7m."
+    },
+    "hauteur_strate_arborescente": {
+      "type_widget": "number",
+      "attribut_label": "Hauteur strate arborescente (en mètres)",
+      "min": 0,
+      "code_sandre": "Par8916"
+    },
+    "recouvrement_strate_arborescente": {
+      "type_widget": "number",
+      "attribut_label": "Recouvrement strate arborescente (%)",
+      "definition": "Recouvrement d'une surface par un taxon - nombre brut (en %)",
+      "min": 0,
+      "max": 100,
+      "code_sandre": "Par7812"
+    },
+    "section_html_strate_arbustive_supérieure": {
+      "type_widget": "html",
+      "html": "<strong>Strate arbustive supérieure</strong><br>Constituée d’arbustes hauts ou de jeunes arbres. Hauteur 3 -7m."
+    },
+    "hauteur_strate_arbustive_supérieure": {
+      "type_widget": "number",
+      "attribut_label": "Hauteur strate arbustive supérieure (en mètres)",
+      "min": 0,
+      "code_sandre": "Par8916"
+    },
+    "recouvrement_strate_arbustive_supérieure": {
+      "type_widget": "number",
+      "attribut_label": "Recouvrement strate arbustive supérieure (%)",
+      "definition": "Recouvrement d'une surface par un taxon - nombre brut (en %)",
+      "min": 0,
+      "max": 100,
+      "code_sandre": "Par7812"
+    },
+    "section_html_strate_arbustive_basse": {
+      "type_widget": "html",
+      "html": "<strong>Strate arbustive basse</strong><br>constituée d’arbustes bas ou de jeunes arbres. Hauteur 1 -7 m."
+    },
+    "hauteur_strate_arbustive_basse": {
+      "type_widget": "number",
+      "attribut_label": "Hauteur strate arbustive basse (en mètres)",
+      "min": 0,
+      "code_sandre": "Par8916"
+    },
+    "recouvrement_strate_arbustive_basse": {
+      "type_widget": "number",
+      "attribut_label": "Recouvrement strate arbustive basse (%)",
+      "definition": "Recouvrement d'une surface par un taxon - nombre brut (en %)",
+      "min": 0,
+      "max": 100,
+      "code_sandre": "Par7812"
+    },
+    "section_html_strate_herbacée": {
+      "type_widget": "html",
+      "html": "<strong>Strate herbacée</strong><br>Constituée d'herbacées et des chaméphytes ; jeunes plantules ligneuses 1m"
+    },
+    "hauteur_strate_herbacée": {
+      "type_widget": "number",
+      "attribut_label": "Hauteur strate herbacée (en mètres)",
+      "min": 0,
+      "code_sandre": "Par8916"
+    },
+    "recouvrement_strate_herbacée": {
+      "type_widget": "number",
+      "attribut_label": "Recouvrement strate herbacée (%)",
+      "definition": "Recouvrement d'une surface par un taxon - nombre brut (en %)",
+      "min": 0,
+      "max": 100,
+      "code_sandre": "Par7812"
+    },
+    "section_html_strate_bryolichénique": {
+      "type_widget": "html",
+      "html": "<strong>Strate bryolichénique</strong><br>Seuls les individus sur le sol sont comptés."
+    },
+    "hauteur_strate_bryolichénique": {
+      "type_widget": "number",
+      "attribut_label": "Hauteur strate bryolichénique (en mètres)",
+      "min": 0,
+      "code_sandre": "Par8916"
+    },
+    "recouvrement_strate_bryolichénique": {
+      "type_widget": "number",
+      "attribut_label": "Recouvrement strate bryolichénique (%)",
+      "definition": "Recouvrement d'une surface par un taxon - nombre brut (en %)",
+      "min": 0,
+      "max": 100,
+      "code_sandre": "Par7812"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

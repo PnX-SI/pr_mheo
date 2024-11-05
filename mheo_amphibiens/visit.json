@@ -1,0 +1,485 @@
+{
+  "display_properties": [
+    "id_base_site",
+    "visit_date_min",
+    "visit_date_max",
+    "observers",
+    "dataset",
+    "id_mesure",
+    "id_mesure_fils",
+    "heure_début",
+    "heure_fin",
+    "propriété_mesure",
+    "diffusion_mesure",
+    "superficie",
+    "physionomie_formations_végétales",
+    "code_masse_eau",
+    "nom_masse_eau",
+    "code_intervenant",
+    "nom_intervenant",
+    "profondeur",
+    "turbidité",
+    "coloration",
+    "type_substrat",
+    "origine_eau",
+    "origine_fuite_eau",
+    "importance_végétation_aquatique",
+    "présence_poissons",
+    "présence_écrevisses"
+  ],
+  "display_list": [
+    "id_base_site",
+    "visit_date_min",
+    "observers",
+    "dataset",
+    "nb_observations"
+  ],
+  "specific": {
+    "id_mesure": {
+      "attribut_label": "identifiant unique de la mesure (max 25 caractères)",
+      "type_widget": "text",
+      "required": true,
+      "code_sandre": "IdOMH"
+    },
+    "id_mesure_fils": {
+      "attribut_label": "identifiant fils pour emboîtement (max 25 caractères)",
+      "type_widget": "text",
+      "code_sandre": "IdOMHFils"
+    },
+    "visit_date_min": {
+      "type_widget": "date",
+      "attribut_label": "Date de début",
+      "code_sandre": "DatDebOMH"
+    },
+    "visit_date_max": {
+      "type_widget": "date",
+      "attribut_label": "Date de fin",
+      "code_sandre": "DatFinOMH"
+    },
+    "heure_début": {
+      "attribut_label": "Heure début mesure",
+      "type_widget": "time",
+      "code_sandre": "HeurDebOMH"
+    },
+    "heure_fin": {
+      "attribut_label": "Heure fin mesure",
+      "type_widget": "time",
+      "code_sandre": "HeurFinOMH"
+    },
+    "propriété_mesure": {
+      "attribut_label": "Propriété mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "DS_PUBLIQUE",
+      "code_sandre": "ProOMH"
+    },
+    "diffusion_mesure": {
+      "attribut_label": "Diffusion mesure",
+      "type_widget": "select",
+      "values": [
+        "Oui",
+        "Non"
+      ],
+      "code_sandre": "DiffOMH"
+    },
+    "superficie": {
+      "attribut_label": "Superficie en m²",
+      "type_widget": "number",
+      "min": 0,
+      "code_sandre": "Par7212"
+    },
+    "distance_parcourue": {
+      "attribut_label": "Distance parcourue effective (en mètres)",
+      "definition": "Si le plan d'eau est petit et que la distance parcourue est inférieure à la valeur du protocole",
+      "widget_type": "number"
+    },
+    "physionomie_formations_végétales": {
+      "attribut_label": "Physionomie des formations végétales",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "AL - Alluvions",
+          "value": "1"
+        },
+        {
+          "label": "AQ - Végétation aquatique",
+          "value": "2"
+        },
+        {
+          "label": "EC - Bordure d'eaux courantes",
+          "value": "3"
+        },
+        {
+          "label": "EX - Grèves exondées",
+          "value": "4"
+        },
+        {
+          "label": "FO - Végétation fontinale",
+          "value": "5"
+        },
+        {
+          "label": "RB - Petits Hélophytes",
+          "value": "6"
+        },
+        {
+          "label": "BM - Bas-marais et marais de transition",
+          "value": "7"
+        },
+        {
+          "label": "HM - Haut-marais",
+          "value": "8"
+        },
+        {
+          "label": "GH - Grands Hélophytes",
+          "value": "9"
+        },
+        {
+          "label": "MC - Magnocariçaie",
+          "value": "10"
+        },
+        {
+          "label": "PH - Prairie humide",
+          "value": "11"
+        },
+        {
+          "label": "MG - Mégaphorbiaie",
+          "value": "12"
+        },
+        {
+          "label": "CN - Combe à neige",
+          "value": "13"
+        },
+        {
+          "label": "LA - Lande et landine",
+          "value": "14"
+        },
+        {
+          "label": "FU -Fourré humide",
+          "value": "15"
+        },
+        {
+          "label": "BFH -Boisement Feuillu Humide",
+          "value": "16"
+        },
+        {
+          "label": "BCH - Boisement et conifère",
+          "value": "17"
+        }
+      ],
+      "code_sandre": "Par8908"
+    },
+    "code_masse_eau": {
+      "attribut_label": "Code national de la masse d'eau (max 250 caractères)",
+      "definition": "Référentiel des masses d'eau disponible ici :\nhttps://id.eaufrance.fr/ddd/MDO/1.4",
+      "type_widget": "text",
+      "code_sandre": "CdMasseDEau"
+    },
+    "nom_masse_eau": {
+      "attribut_label": "Nom de la masse d'eau (max 250 caractères)",
+      "type_widget": "text",
+      "code_sandre": "NomMasseDEau"
+    },
+    "code_intervenant": {
+      "attribut_label": "Code de l'observateur (max 74 caractères)",
+      "type_widget": "text",
+      "code_sandre": "CdInterven"
+    },
+    "nom_intervenant": {
+      "attribut_label": "Nom de l'observateur (max 74 caractères)",
+      "type_widget": "text",
+      "code_sandre": "NomIntervenant"
+    },
+    "profondeur": {
+      "attribut_label": "Profondeur en cm",
+      "type_widget": "number",
+      "min": 0,
+      "code_sandre": "Par7280"
+    },
+    "turbidité": {
+      "attribut_label": "Turbidité",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Nulle",
+          "value": 1
+        },
+        {
+          "label": "Faible",
+          "value": 2
+        },
+        {
+          "label": "Moyenne",
+          "value": 3
+        },
+        {
+          "label": "Forte",
+          "value": 4
+        }
+      ],
+      "code_sandre": "Par6498"
+    },
+    "coloration": {
+      "attribut_label": "Mesure de la coloration brun-jaunâtre de l'eau en mg de platine/L",
+      "type_widget": "number",
+      "min": 0,
+      "code_sandre": "Par1309"
+    },
+    "type_substrat": {
+      "attribut_label": "Type de substrat",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Cailloutis",
+          "value": "1"
+        },
+        {
+          "label": "Débris",
+          "value": "2"
+        },
+        {
+          "label": "Eau, flaque, mare",
+          "value": "3"
+        },
+        {
+          "label": "Galets",
+          "value": "4"
+        },
+        {
+          "label": "Mélange de substrat dur et meuble (ex : galets et sable, roches et sables, etc.)",
+          "value": "5"
+        },
+        {
+          "label": "Roche envasée",
+          "value": "6"
+        },
+        {
+          "label": "Sable",
+          "value": "7"
+        },
+        {
+          "label": "Substrat dur colonisé par des organismes (coraux, algues par ex.)",
+          "value": "8"
+        },
+        {
+          "label": "Substrat dur nu / Roche nue",
+          "value": "9"
+        },
+        {
+          "label": "Vase",
+          "value": "10"
+        },
+        {
+          "label": "Schorres",
+          "value": "11"
+        },
+        {
+          "label": "Roches",
+          "value": "12"
+        },
+        {
+          "label": "Substrat meuble",
+          "value": "13"
+        },
+        {
+          "label": "Corail mort en place",
+          "value": "14"
+        },
+        {
+          "label": "Dalle corallienne",
+          "value": "15"
+        },
+        {
+          "label": "Blocs",
+          "value": "16"
+        },
+        {
+          "label": "Vide d'algue",
+          "value": "17"
+        },
+        {
+          "label": "Substrat dur (colonisé ou non)",
+          "value": "18"
+        },
+        {
+          "label": "Non précisé",
+          "value": "19"
+        },
+        {
+          "label": "Sable fin vaseux",
+          "value": "20"
+        },
+        {
+          "label": "Sable grossier propre",
+          "value": "21"
+        },
+        {
+          "label": "Sable fin propre",
+          "value": "22"
+        },
+        {
+          "label": "Récif",
+          "value": "23"
+        },
+        {
+          "label": "Sable noir",
+          "value": "24"
+        },
+        {
+          "label": "Graviers / Cailloux",
+          "value": "25"
+        },
+        {
+          "label": "Roche mère",
+          "value": "26"
+        },
+        {
+          "label": "Sable fin",
+          "value": "27"
+        }
+      ],
+      "code_sandre": "Par7263"
+    },
+    "origine_eau": {
+      "attribut_label": "Origine de l'eau",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Ruissellement",
+          "value": "1"
+        },
+        {
+          "label": "Eau de drainage",
+          "value": "2"
+        },
+        {
+          "label": "Apport de la nappe",
+          "value": "3"
+        },
+        {
+          "label": "Source",
+          "value": "4"
+        },
+        {
+          "label": "Débordement d'une rivière",
+          "value": "5"
+        },
+        {
+          "label": "Autres",
+          "value": "6"
+        },
+        {
+          "label": "Indéterminé",
+          "value": "7"
+        }
+      ],
+      "code_sandre": "Par8917"
+    },
+    "origine_fuite_eau": {
+      "attribut_label": "Origine de la fuite d'eau",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Évaporation",
+          "value": "1"
+        },
+        {
+          "label": "Fuite dans le point d'eau",
+          "value": "2"
+        },
+        {
+          "label": "Ruissellement de surface",
+          "value": "3"
+        },
+        {
+          "label": "Fuite par un fossé",
+          "value": "4"
+        },
+        {
+          "label": "Évacuation de surface",
+          "value": "5"
+        }
+      ],
+      "code_sandre": "Par8918"
+    },
+    "importance_végétation_aquatique": {
+      "attribut_label": "Importance de la végétation aquatique",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Nulle",
+          "value": "0"
+        },
+        {
+          "label": "Très faible",
+          "value": "1"
+        },
+        {
+          "label": "Faible",
+          "value": "2"
+        },
+        {
+          "label": "Moyenne",
+          "value": "3"
+        },
+        {
+          "label": "Importante",
+          "value": "4"
+        },
+        {
+          "label": "Très importante",
+          "value": "5"
+        },
+        {
+          "label": "Indéterminable",
+          "value": "6"
+        },
+        {
+          "label": "Non renseignée",
+          "value": "7"
+        }
+      ],
+      "code_sandre": "Par7003"
+    },
+    "présence_poissons": {
+      "attribut_label": "Présence / absence de taxons de poissons",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Présence",
+          "value": "1"
+        },
+        {
+          "label": "Absence",
+          "value": "2"
+        },
+        {
+          "label": "Non renseigné",
+          "value": "3"
+        }
+      ],
+      "code_sandre": "Par7554"
+    },
+    "présence_écrevisses": {
+      "attribut_label": "Présence / absence de taxons d'écrevisses",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Présence",
+          "value": "1"
+        },
+        {
+          "label": "Absence",
+          "value": "2"
+        },
+        {
+          "label": "Non renseigné",
+          "value": "3"
+        }
+      ],
+      "code_sandre": "Par7554"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}
