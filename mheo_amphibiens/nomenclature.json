@@ -1,0 +1,79 @@
+{
+  "types": [
+    {
+      "mnemonique": "TYPE_SITE",
+      "label_default": "Type de sites",
+      "definition_default": "Nomenclature des types de sites suivi dans gn_monitoring."
+    },
+    {
+      "mnemonique": "PRECISION_GEO",
+      "label_default": "Précision des coordonnées géographiques",
+      "definition_default": "La précision des coordonnées précise à l'aide de l'une des valeurs de la nomenclature, le niveau d'exactitude des coordonnées du point d'eau."
+    }
+  ],
+  "nomenclatures": [
+    {
+      "type": "TYPE_SITE",
+      "cd_nomenclature": "MHEO_AMPHIBIENS",
+      "mnemonique": "Point observation amphibiens",
+      "label_default": "Point observation amphibiens",
+      "definition_default": "Masse d'eau pour observation amphibiens"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "0",
+      "mnemonique": "Inconnue",
+      "label_default": "0 - Précision inconnue",
+      "definition_default": "La précision est inconnue quand aucune information n'est disponible sur le niveau d'exactitude des coordonnée"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "11",
+      "mnemonique": "Centimétrique",
+      "label_default": "11 - Précision centimétrique",
+      "definition_default": "Précision inférieure à 10 centimètres"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "12",
+      "mnemonique": "Décimétrique",
+      "label_default": "12 - Précision décimétrique",
+      "definition_default": "Précision inférieure à 1 mètre"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "13",
+      "mnemonique": "Métrique 1",
+      "label_default": "13 - Précision métrique inférieure à 5 mètres",
+      "definition_default": "Précision inférieure à 5 mètres"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "14",
+      "mnemonique": "Métrique 2",
+      "label_default": "14 - Précision métrique inférieure à 10 mètres\n",
+      "definition_default": "Précision inférieure à 10 mètres"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "15",
+      "mnemonique": "Décamétrique 1",
+      "label_default": "15 - Précision décamétrique inférieure à 50 mètres",
+      "definition_default": "Précision inférieure à 50 mètres"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "16",
+      "mnemonique": "Décamétrique 2",
+      "label_default": "16 - Précision décamétrique supérieure à 50 mètres",
+      "definition_default": "Précision supérieure à 50 mètres"
+    },
+    {
+      "type": "PRECISION_GEO",
+      "cd_nomenclature": "17",
+      "mnemonique": "CoordCentroïdeCommune",
+      "label_default": "17 - Coordonnées du centroïde de la commune",
+      "definition_default": "Coordonnées calculées à partir du barycentre de la commune où est situé l’objet ; commune du dernier référentiel publié par l’INSEE. Dans le cas ou le barycentre est hors de la commune il est corrigé pour être dans la commune"
+    }
+  ]
+}

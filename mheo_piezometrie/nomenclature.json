@@ -1,0 +1,300 @@
+{
+  "types": [
+    {
+      "mnemonique": "METH_DEPOUILLEMENT",
+      "label_default": "Méthode de dépouillement",
+      "definition_default": "Méthode de dépouillement des données pour le protocole MhéO Piézométrie\nRéférence : https://id.eaufrance.fr/nsa/164"
+    },
+    {
+      "mnemonique": "PRECISION_ALTI",
+      "label_default": "Précision altimétrique (Z)",
+      "definition_default": "Précision altimétrique (Z)\nRéférence : https://id.eaufrance.fr/nsa/890"
+    },
+    {
+      "mnemonique": "CODE_CONTINUITE_POINT",
+      "label_default": "Code de continuité du point",
+      "definition_default": "Code de continuité du point\nRéférence : https://id.eaufrance.fr/nsa/72"
+    },
+    {
+      "mnemonique": "MODE_OBTENTION_MESURE",
+      "label_default": "Mode d'obtention de la mesure piézométrique",
+      "definition_default": "Mode d'obtention de la mesure piézométrique\nRéférence : https://id.eaufrance.fr/nsa/180"
+    },
+    {
+      "mnemonique": "QUALITIFICATION_RESULTAT",
+      "label_default": "Qualification résultat",
+      "definition_default": "Qualification résultat\nRéférence : https://id.eaufrance.fr/nsa/414"
+    },
+    {
+      "mnemonique": "STATUT_DONNEES_PIEZO",
+      "label_default": "Statut de la donnée piézométrique",
+      "definition_default": "Statut de la donnée piézométrique\nRéférence : https://id.eaufrance.fr/nsa/415"
+    },
+    {
+      "mnemonique": "NATURE_MESURE",
+      "label_default": "Nature de la Mesure",
+      "definition_default": "Nature de la Mesure\nRéférence : https://id.eaufrance.fr/nsa/604"
+    }
+  ],
+  "nomenclatures": [
+    {
+      "type": "TYPE_SITE",
+      "cd_nomenclature": "POINT_RELEVE_PIEZOMETRIQUE",
+      "mnemonique": "Point de relevé piézométrique",
+      "label_default": "Point de relevé piézométrique",
+      "definition_default": "Point de relevé piézométrique"
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "0",
+      "mnemonique": "Inconnu",
+      "label_default": "Inconnu",
+      "definition_default": "Aucune information n'est disponible sur le mode de sélection des données conservées."
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "1",
+      "mnemonique": "Cerisage",
+      "label_default": "Cerisage",
+      "definition_default": "Sélection des points d'inflexion de la chronique de mesure en continu (limnis)."
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "2",
+      "mnemonique": "Pas de temps fixe",
+      "label_default": "Pas de temps fixe",
+      "definition_default": "Sélection de points à date et heure fixes ou espacés d'une période stable dans le temps."
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "3",
+      "mnemonique": "Pas de temps variable",
+      "label_default": "Pas de temps variable",
+      "definition_default": "Sélection de points sans critère."
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "4",
+      "mnemonique": "Continu",
+      "label_default": "Continu",
+      "definition_default": "Dépouillement des données en continu"
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "5",
+      "mnemonique": "Valeur mesurée",
+      "label_default": "Valeur mesurée",
+      "definition_default": "Stockage de la valeur mesurée par l'appareil"
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "6",
+      "mnemonique": "Moyenne journalière",
+      "label_default": "Moyenne journalière",
+      "definition_default": "Stockage de la valeur moyenne de la journée"
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "7",
+      "mnemonique": "Maximum journalier",
+      "label_default": "Maximum journalier",
+      "definition_default": "Stockage de la valeur maximale de la journée (maximum en côte NGF)"
+    },
+    {
+      "type": "METH_DEPOUILLEMENT",
+      "cd_nomenclature": "8",
+      "mnemonique": "Minimum journalier",
+      "label_default": "Minimum journalier",
+      "definition_default": "Stockage de la valeur minimale de la journée"
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "0",
+      "mnemonique": "Inconnue",
+      "label_default": "Précision altimétrique inconnue",
+      "definition_default": "La précision est inconnue quand aucune information n'est disponible sur le niveau d'exactitude de l'altitude."
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "1",
+      "mnemonique": "Centimétrique",
+      "label_default": "Précision atimétrique centimétrique",
+      "definition_default": "Précision altimétrique inférieure à 10 centimètres"
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "2",
+      "mnemonique": "Décimétrique",
+      "label_default": "Précision altimétrique décimétrique",
+      "definition_default": "Précision altimétrique inférieure à 1 mètre"
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "3",
+      "mnemonique": "Métrique 1",
+      "label_default": "Précision altimétrique métrique inférieure à 5 mètres",
+      "definition_default": "Précision altimétrique inférieure à 5 mètres"
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "4",
+      "mnemonique": "Métrique 2",
+      "label_default": "Précision altimétrique métrique inférieure à 10 mètres",
+      "definition_default": "Précision altimétrique inférieure à 10 mètres"
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "5",
+      "mnemonique": "Décamétrique 1",
+      "label_default": "Précision altimétrique décamétrique inférieure à 50 mètres",
+      "definition_default": "Précision altimétrique inférieure à 50 mètres"
+    },
+    {
+      "type": "PRECISION_ALTI",
+      "cd_nomenclature": "6",
+      "mnemonique": "Décamétrique 2",
+      "label_default": "Précision altimétrique décamétrique supérieure à 50 mètres",
+      "definition_default": "Précision altimétrique supérieure à 50 mètres"
+    },
+    {
+      "type": "CODE_CONTINUITE_POINT",
+      "cd_nomenclature": "1",
+      "mnemonique": "début",
+      "label_default": "Début de chronique",
+      "definition_default": "Le point est un point initial, à savoir un point qui débute une chronique."
+    },
+    {
+      "type": "CODE_CONTINUITE_POINT",
+      "cd_nomenclature": "2",
+      "mnemonique": "lié",
+      "label_default": "Point lié au point précédent",
+      "definition_default": "Le point est un point courant, c'est-à-dire lié au précédent.  Un point de fin de chronique est un point courant."
+    },
+    {
+      "type": "MODE_OBTENTION_MESURE",
+      "cd_nomenclature": "0",
+      "mnemonique": "Mode d'obtention inconnu",
+      "label_default": "Mode d'obtention inconnu",
+      "definition_default": "Valeur dont le mode d'obtention est inconnu."
+    },
+    {
+      "type": "MODE_OBTENTION_MESURE",
+      "cd_nomenclature": "1",
+      "mnemonique": "Valeur mesurée",
+      "label_default": "Valeur mesurée",
+      "definition_default": "Valeur directement issue du processus de mesurage (capteur, lecture visuelle...)."
+    },
+    {
+      "type": "MODE_OBTENTION_MESURE",
+      "cd_nomenclature": "2",
+      "mnemonique": "Valeur reconstituée",
+      "label_default": "Valeur reconstituée",
+      "definition_default": "Valeur établie en dehors du processus de mesurage (capteur, lecture visuelle...) sur la base d'avis d'expert, correlation avec d'autres données..."
+    },
+    {
+      "type": "MODE_OBTENTION_MESURE",
+      "cd_nomenclature": "3",
+      "mnemonique": "Valeur corrigée",
+      "label_default": "Valeur corrigée",
+      "definition_default": "Valeur corrigée à l'issue du processus de contrôle à partir d’une mesure manuelle  (ex : correction d'une portion de chronique suite à la dérive d'un capteur)."
+    },
+    {
+      "type": "QUALITIFICATION_RESULTAT",
+      "cd_nomenclature": "0",
+      "mnemonique": "non définissable",
+      "label_default": "Qualification non definissable",
+      "definition_default": "Une valeur sera non définissable lorsque le producteur est dans l'impossibilité d'obtenir les informations nécessaires pour évaluer la conformité de la donnée. Il s'agit par exemple de données historiques récupérées des archives dont on a perdu toute information sur la façon dont elles ont été produites."
+    },
+    {
+      "type": "QUALITIFICATION_RESULTAT",
+      "cd_nomenclature": "1",
+      "mnemonique": "Correcte",
+      "label_default": "Correcte",
+      "definition_default": "Une valeur est déclarée « Correcte » lorsque elle est estimée valide au stade de validation indiquée dans l'information « statut de la donnée » et vis-à-vis de la finalité recherchée."
+    },
+    {
+      "type": "QUALITIFICATION_RESULTAT",
+      "cd_nomenclature": "2",
+      "mnemonique": "Incorrecte",
+      "label_default": "Incorrecte",
+      "definition_default": "Une valeur est déclarée « Incorrecte » lorsque elle est estimée erronée au stade de validation indiqué dans l'information « statut de la donnée » et vis-à-vis de la finalité recherchée."
+    },
+    {
+      "type": "QUALITIFICATION_RESULTAT",
+      "cd_nomenclature": "3",
+      "mnemonique": "Incertaine",
+      "label_default": "Incertaine",
+      "definition_default": "Une valeur sera déclarée « Incertaine » si la validité de la  donnée reste « douteuse » au stade de validation indiquée dans l'information « statut de la donnée ». Dans la mesure du possible, la qualification « Douteuse » doit être une étape transitoire de la validation de la donnée et doit être réservé à des avancements intermédiaires de la validation."
+    },
+    {
+      "type": "QUALITIFICATION_RESULTAT",
+      "cd_nomenclature": "4",
+      "mnemonique": "Non qualifié",
+      "label_default": "Non qualifié",
+      "definition_default": "Etat initial de la mesure qui n'a encore subi aucun audit ou interprétation du producteur de données en vue de sa validation."
+    },
+    {
+      "type": "STATUT_DONNEES_PIEZO",
+      "cd_nomenclature": "1",
+      "mnemonique": "Brute",
+      "label_default": "Donnée brute",
+      "definition_default": "Données issues du processus d'acquisition n'ayant subi aucun examen. Ex. : donnée directement issue de l'appareil de mesure"
+    },
+    {
+      "type": "STATUT_DONNEES_PIEZO",
+      "cd_nomenclature": "2",
+      "mnemonique": "NV1",
+      "label_default": "Donnée contrôlée niveau 1",
+      "definition_default": "Données ayant subi un ou plusieurs contrôles (au bureau, par un système expert ou par une personne physique) en fonction du contexte de la mesure."
+    },
+    {
+      "type": "STATUT_DONNEES_PIEZO",
+      "cd_nomenclature": "3",
+      "mnemonique": "NV2",
+      "label_default": "Donnée contrôlée niveau 2",
+      "definition_default": "Données ayant subi un contrôle par une comparaison avec une mesure manuelle sur le terrain (contrôle de la chaîne d'acquisition avec correction des dérives)"
+    },
+    {
+      "type": "STATUT_DONNEES_PIEZO",
+      "cd_nomenclature": "4",
+      "mnemonique": "MP",
+      "label_default": "Donnée mise en perspective",
+      "definition_default": "La valeur a été utilisée dans un rapport ou valorisée (diagrammes binaires, comparaison faci??s, etc). Cette mise en perspective de l'information permet de consolider son niveau de validité et détecter les dernières erreurs."
+    },
+    {
+      "type": "NATURE_MESURE",
+      "cd_nomenclature": "N",
+      "mnemonique": "Naturel",
+      "label_default": "Naturel",
+      "definition_default": "Niveau statique de la nappe sans influence de pompages."
+    },
+    {
+      "type": "NATURE_MESURE",
+      "cd_nomenclature": "I",
+      "mnemonique": "Influencé",
+      "label_default": "Influencé",
+      "definition_default": "Niveau statique de la nappe influencé par un ou plusieurs ouvrages de prélèvement ou des pompages avoisinants (dans la nappe ou dans la rivière associée dans le cas de nappes d'accompagnement)."
+    },
+    {
+      "type": "NATURE_MESURE",
+      "cd_nomenclature": "D",
+      "mnemonique": "Dynamique",
+      "label_default": "Dynamique",
+      "definition_default": "Niveau non stabilisé de la nappe pendant ou après un pompage réalisé dans l'ouvrage même."
+    },
+    {
+      "type": "NATURE_MESURE",
+      "cd_nomenclature": "S",
+      "mnemonique": "Sec",
+      "label_default": "Sec",
+      "definition_default": "Ouvrage à sec. Le niveau de la nappe est inférieur à la profondeur de l'ouvrage."
+    },
+    {
+      "type": "NATURE_MESURE",
+      "cd_nomenclature": "0",
+      "mnemonique": "Inconnue",
+      "label_default": "Inconnue",
+      "definition_default": "Inconnue"
+    }
+  ]
+}

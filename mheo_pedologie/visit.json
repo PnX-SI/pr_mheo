@@ -1,0 +1,102 @@
+{
+  "display_properties": [
+    "visit_date_min",
+    "observers",
+    "profondeur_sondage",
+    "nb_observations",
+    "cause_arrêt_description",
+    "présence_nappe",
+    "type_temps",
+    "ambiance"
+  ],
+  "display_list": [
+    "visit_date_min",
+    "observers",
+    "profondeur_sondage",
+    "nb_observations"
+  ],
+  "specific": {
+    "cause_arrêt_description": {
+      "attribut_label": "Cause de l'arrêt de la description pédologique",
+      "type_widget": "select",
+      "value": "4",
+      "values": [
+        {
+          "label": "Horizon C atteint",
+          "value": "1"
+        },
+        {
+          "label": "Horizon M, R ou D atteint",
+          "value": "2"
+        },
+        {
+          "label": "Nappe atteinte",
+          "value": "3"
+        },
+        {
+          "label": "Profondeur suffisante atteinte",
+          "value": "4"
+        },
+        {
+          "label": "Autre contrainte",
+          "value": "5"
+        },
+        {
+          "label": "Trop sec",
+          "value": "6"
+        },
+        {
+          "label": "Trop fluant ou boulant",
+          "value": "7"
+        },
+        {
+          "label": "Trop graveleux ou caillouteux",
+          "value": "8"
+        },
+        {
+          "label": "Trop compact",
+          "value": "9"
+        }
+      ],
+      "required": true,
+      "code_sandre": "Par8470"
+    },
+    "profondeur_sondage": {
+      "attribut_label": "Profondeur du sondage",
+      "type_widget": "number",
+      "min": 0,
+      "required": true,
+      "definition": "en centimètres",
+      "code_sandre": "Par8471"
+    },
+    "présence_nappe": {
+      "attribut_label": "Présence de nappe",
+      "type_widget": "select",
+      "values": [
+        "Oui",
+        "Non"
+      ],
+      "required": true,
+      "code_sandre": "Par8905"
+    },
+    "type_temps": {
+      "attribut_label": "Type de temps",
+      "type_widget": "text",
+      "code_sandre": "Par1425"
+    },
+    "ambiance": {
+      "attribut_label": "Ambiance",
+      "type_widget": "text",
+      "code_sandre": "Par1425."
+    },
+    "observers": {
+      "attribut_label": "Intervenants"
+    },
+    "nb_observations": {
+      "attribut_label": "Nombre d'horizons"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

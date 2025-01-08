@@ -1,0 +1,84 @@
+{
+  "display_properties": [
+    "cd_nom",
+    "nb_individus",
+    "sexe",
+    "comportement_reproducteur",
+    "présence_exuvie"
+  ],
+  "display_list": [
+    "cd_nom"
+  ],
+  "specific": {
+    "nb_individus": {
+      "attribut_label": "Nombre d'individus",
+      "type_widget": "number",
+      "code_sandre": "Par3134"
+    },
+    "sexe": {
+      "attribut_label": "Sexe",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Indéterminé",
+          "value": "0"
+        },
+        {
+          "label": "Mâle",
+          "value": "1"
+        },
+        {
+          "label": "Femelle",
+          "value": "2"
+        },
+        {
+          "label": "Indifférencié",
+          "value": "3"
+        }
+      ],
+      "code_sandre": "Par1783"
+    },
+    "comportement_reproducteur": {
+      "attribut_label": "Comportement reproducteur le plus significatif",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Défense territoriale",
+          "value": "1"
+        },
+        {
+          "label": "Tandem accouplement",
+          "value": "2"
+        },
+        {
+          "label": "Ponte",
+          "value": "3"
+        },
+        {
+          "label": "Néonate / Immature",
+          "value": "4"
+        },
+        {
+          "label": "Emergence / Exuvie",
+          "value": "5"
+        }
+      ],
+      "code_sandre": "Par8912"
+    },
+    "présence_exuvie": {
+      "attribut_label": "Présence d'exuvie",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Oui",
+          "value": "1"
+        },
+        {
+          "label": "Non",
+          "value": "2"
+        }
+      ],
+      "code_sandre": "Par8913"
+    }
+  }
+}

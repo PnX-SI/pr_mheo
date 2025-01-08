@@ -1,0 +1,141 @@
+{
+  "display_properties": [
+    "id_base_site",
+    "nb_observations",
+    "id_mesure",
+    "id_mesure_fils",
+    "visit_date_min",
+    "visit_date_max",
+    "heure_début",
+    "heure_fin",
+    "observers",
+    "dataset",
+    "propriété_mesure",
+    "diffusion_mesure",
+    "durée_secondes",
+    "température_degrés",
+    "vent",
+    "nébulosité"
+  ],
+  "display_list": [
+    "id_base_site",
+    "visit_date_min",
+    "observers",
+    "dataset",
+    "nb_observations"
+  ],
+  "specific": {
+    "id_mesure": {
+      "attribut_label": "identifiant unique de la mesure (max 25 caractères)",
+      "type_widget": "text",
+      "required": true,
+      "code_sandre": "IdOMH"
+    },
+    "id_mesure_fils": {
+      "attribut_label": "identifiant fils pour emboîtement (max 25 caractères)",
+      "type_widget": "text",
+      "code_sandre": "IdOMHFils"
+    },
+    "visit_date_min": {
+      "type_widget": "date",
+      "attribut_label": "Date de début",
+      "required": true,
+      "code_sandre": "DatDebOMH"
+    },
+    "visit_date_max": {
+      "type_widget": "date",
+      "attribut_label": "Date de fin",
+      "code_sandre": "DatFinOMH"
+    },
+    "heure_début": {
+      "attribut_label": "Heure début mesure",
+      "type_widget": "time",
+      "code_sandre": "HeurDebOMH"
+    },
+    "heure_fin": {
+      "attribut_label": "Heure fin mesure",
+      "type_widget": "time",
+      "code_sandre": "HeurFinOMH"
+    },
+    "propriété_mesure": {
+      "attribut_label": "Propriété mesure",
+      "type_widget": "nomenclature",
+      "type_util": "nomenclature",
+      "code_nomenclature_type": "DS_PUBLIQUE",
+      "code_sandre": "ProOMH"
+    },
+    "diffusion_mesure": {
+      "attribut_label": "Diffusion mesure",
+      "type_widget": "select",
+      "values": [
+        "Oui",
+        "Non"
+      ],
+      "code_sandre": "DiffOMH"
+    },
+    "durée_secondes": {
+      "attribut_label": "Durée en seconde",
+      "type_widget": "number",
+      "code_sandre": "Par7789"
+    },
+    "température_degrés": {
+      "attribut_label": "Température en °C",
+      "type_widget": "number",
+      "code_sandre": "Par1409"
+    },
+    "vent": {
+      "attribut_label": "Vent",
+      "definition": "Evaluation de la vitesse du vent basée sur l'échelle de Beaufort",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "1 : vent perceptible sur une fumée mais pas sur une girouette (1 à 5 km/h)",
+          "value": "1"
+        },
+        {
+          "label": "2 : girouette en mouvement et vent perceptible sur le visage (6 à 11 km/h)",
+          "value": "2"
+        },
+        {
+          "label": "3 : feuilles et brindilles constamment en mouvement (12 à 19 km/h)",
+          "value": "3"
+        },
+        {
+          "label": "4 : petites branches en mouvement et poussières tourbillonnantes (20 à 28 km/h)",
+          "value": "4"
+        },
+        {
+          "label": "5 : vagues visibles sur l'eau, les petits arbres balancent, sommets des arbres agités (29 à 38 km/h)",
+          "value": "5"
+        }
+      ],
+      "code_sandre": "Par6447"
+    },
+    "nébulosité": {
+      "attribut_label": "Nébulosité",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "0",
+          "value": "1"
+        },
+        {
+          "label": "1/4",
+          "value": "2"
+        },
+        {
+          "label": "1/2",
+          "value": "3"
+        },
+        {
+          "label": "3/4",
+          "value": "4"
+        }
+      ],
+      "code_sandre": "Par8909"
+    },
+    "comments": {
+      "hidden": true
+    }
+  }
+}

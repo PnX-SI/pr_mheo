@@ -1,0 +1,120 @@
+{
+  "genre": "M",
+  "label": "Point",
+  "label_list": "Points",
+  "description_field_name": "base_site_name",
+  "geometry_type": "Point",
+  "display_properties": [
+    "base_site_name",
+    "first_use_date",
+    "last_visit",
+    "nb_visits",
+    "types_site",
+    "id_inventor",
+    "CdMhi",
+    "id_localisation_inrae",
+    "id_sondage_référence",
+    "PrecisionCoordPedo",
+    "code_méthode"
+  ],
+  "display_list": [
+    "base_site_name",
+    "last_visit",
+    "id_inventor",
+    "nb_visits",
+    "types_site"
+  ],
+  "specific": {
+    "code_milieu_humide": {
+      "attribut_label": "Code du milieu humide effectif",
+      "type_widget": "text",
+      "required": true,
+      "code_sandre": "CdMhi"
+    },
+    "base_site_name": {
+      "type_widget": "text",
+      "attribut_label": "Identifiant de la localisation pédologique (producteur)",
+      "required": true,
+      "definition": "Identifiant unique du lieu du sondage sol défini par le producteur de données.",
+      "code_sandre": "IdLocPedoP"
+    },
+    "id_localisation_inrae": {
+      "attribut_label": "Identifiant de la localisation pédologique (INRAE)",
+      "type_widget": "text",
+      "definition": "Identifiant renseigné par l'INRAE.",
+      "code_sandre": "IdLocPedo2"
+    },
+    "id_sondage_référence": {
+      "attribut_label": "Identifiant du sondage de référence",
+      "type_widget": "text",
+      "definition": "Identifiant renseigné par l'INRAE.",
+      "code_sandre": "IdSondageRef"
+    },
+    "PrecisionCoordPedo": {
+      "attribut_label": "Précision des coordonnées de la localisation pédologique",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Précision inconnue",
+          "value": "0"
+        },
+        {
+          "label": "Précision centimétrique",
+          "value": "11"
+        },
+        {
+          "label": "Précision décimétrique",
+          "value": "12"
+        },
+        {
+          "label": "Précision métrique inférieure à 5 mètres",
+          "value": "13"
+        },
+        {
+          "label": "Précision métrique inférieure à 10 mètres",
+          "value": "14"
+        },
+        {
+          "label": "Précision décamétrique inférieure à 50 mètres",
+          "value": "15"
+        },
+        {
+          "label": "Précision décamétrique supérieure à 50 mètres",
+          "value": "16"
+        },
+        {
+          "label": "Coordonnées du centroïde de la commune",
+          "value": "17"
+        }
+      ],
+      "code_sandre": "PrecisionCoordPedo"
+    },
+    "code_méthode": {
+      "attribut_label": "Code de la méthode",
+      "type_widget": "select",
+      "values": [
+        {
+          "label": "Tarrière",
+          "value": "1107"
+        },
+        {
+          "label": "Fosse",
+          "value": "1108"
+        }
+      ],
+      "required": true,
+      "code_sandre": "CdMethode"
+    },
+    "base_site_code": {
+      "required": false,
+      "hidden": true
+    },
+    "base_site_description": {
+      "hidden": true
+    },
+    "id_sites_group": {
+      "required": false,
+      "hidden": true
+    }
+  }
+}
